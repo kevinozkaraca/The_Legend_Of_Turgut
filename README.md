@@ -55,15 +55,16 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
 
 <p align="center">
   <br/>
-    <a class="hrefLink" href="https://github.com/kevinozkaraca" target="_blank"
-          ><img
+  <a class="hrefLink" href="https://github.com/kevinozkaraca" target="_blank">
+  <img
             class="IMGlink"
             src="imagesOfReadme/iconGithub.png"
             alt="Icone Github de Kevin Özkaraca"
             aria-label="Accedez à mes dépots Github"
             width= 8%
-        /></a>
-        <a class="hrefLink" href="https://www.facebook.com/kevinozkaraca" target="_blank"
+    />
+    </a>
+    <a class="hrefLink" href="https://www.facebook.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
             src="imagesOfReadme/iconFacebook.png"
@@ -119,13 +120,4 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
             aria-label="Envoyez moi un mail sur mon Gmail"
                 width= 8%
         /></a>
-        <a class="hrefLink" href="https://stackoverflow.com/users/14641483/kevin-deniz-%c3%96zkaraca" target="_blank"
-          ><img
-            class="IMGlink"
-            src="imagesOfReadme/iconsStackoverflow.png"
-            alt="Icone stackoverflow de Kevin Özkaraca"
-            aria-label="Accedez à mon  compte Stack Overflow"
-                width= 8%
-        /></a>
-      </div> 
 </p>
