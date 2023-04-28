@@ -1,0 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "retro";
+  src: url(fontWeb/retro.ttf);
+}
