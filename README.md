@@ -7,7 +7,7 @@
 En reconversion professionnelle depuis le mois de mai 2020, je partage avec vous ce projet ludique. Un projet jeu qui me permet de coder régulièrement. J'ai utilisé auparavant Phaser.js, Pygame et Unity mais je suis revenu a une version en JavaScript qui est le language que j'utilise le plus lors de ma formation et je n'utilise aucun framework pour améliorer mes compétences en JavaScript.
 
 <p align="center">
-    <a size="1" href= "https://kevinozkaraca.github.io/Turgut_Javascript/"> ⚔️ Cliquer ici pour jouer ⚔️</a>
+    <a size="1" href= "https://kevinozkaraca.github.io/The_Legend_Of_Turgut/"> ⚔️ Cliquer ici pour jouer ⚔️</a>
 </p>
 
 <p align="center">
@@ -27,7 +27,7 @@ J'ai réalisé le personnage Turgut grace au logiciel PISKEL. En me référant �
 <br>
 <img 
             class="IMGlink"
-            src="./imagesReadme/equipeTurgut.jpg"
+            src="./imagesOfReadme/equipeTurgut.jpg"
             alt="Photo de l'équipe de travail"
             aria-label="Photo de l'équipe de travail"
             width= 90%
@@ -44,7 +44,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
 <br>
 <img 
             class="IMGlink"
-            src="./imagesReadme/turgutPapercraft.jpg"
+            src="./imagesOfReadme/turgutPapercraft.jpg"
             alt="Photo de l'équipe de travail"
             aria-label="Photo de l'équipe de travail"
             width= 90%
@@ -58,7 +58,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
     <a class="hrefLink" href="https://github.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconGithub.png"
+            src="imagesOfReadme/iconGithub.png"
             alt="Icone Github de Kevin Özkaraca"
             aria-label="Accedez à mes dépots Github"
             width= 8%
@@ -66,7 +66,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://www.facebook.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconFacebook.png"
+            src="imagesOfReadme/iconFacebook.png"
             alt="Icone Facebook de Kevin Özkaraca"
             aria-label="Accedez à mon compte Facebook"
                 width= 8%
@@ -74,7 +74,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://pinterest.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconPinterest.png"
+            src="imagesOfReadme/iconPinterest.png"
             alt="Icone Pinterest de Kevin Özkaraca"
             aria-label="Accedez à mon compte Pinterest"
                 width= 8%
@@ -82,7 +82,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://twitter.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconTwitter.png"
+            src="imagesOfReadme/iconTwitter.png"
             alt="Icone Twitter de Kevin Özkaraca"
             aria-label="Accedez à mon compte Twitter"
                 width= 8%
@@ -90,7 +90,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://instagram.com/kevinozkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconInstagram.png"
+            src="imagesOfReadme/iconInstagram.png"
             alt="Icone Instagram de Kevin Özkaraca"
             aria-label="Accedez à mon compte Instagram"
                 width= 8%
@@ -98,7 +98,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://www.linkedin.com/in/kevin-%C3%B6zkaraca-66a256209/" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconLinkedin.png"
+            src="imagesOfReadme/iconLinkedin.png"
             alt="Icone Linkedin de Kevin Özkaraca"
             aria-label="Accedez à mon  compte Linkedin"
                 width= 8%
@@ -106,7 +106,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://www.youtube.com/channel/UCgrJrS7eEZ-HpdyA6YoXRmw" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconYoutube.png"
+            src="imagesOfReadme/iconYoutube.png"
             alt="Icone Youtube de Kevin Özkaraca"
             aria-label="Accedez à ma chaine Youtube"
                 width= 8%
@@ -114,7 +114,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="mailto:kevin.ozkaraca@gmail.com" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconGmail.png"
+            src="imagesOfReadme/iconGmail.png"
             alt="Icone Gmail de Kevin Özkaraca"
             aria-label="Envoyez moi un mail sur mon Gmail"
                 width= 8%
@@ -122,7 +122,7 @@ En dehors de l'aspect ludique, ce projet me permet de mettre en pratique mes con
         <a class="hrefLink" href="https://stackoverflow.com/users/14641483/kevin-deniz-%c3%96zkaraca" target="_blank"
           ><img
             class="IMGlink"
-            src="imagesReadme/iconsStackoverflow.png"
+            src="imagesOfReadme/iconsStackoverflow.png"
             alt="Icone stackoverflow de Kevin Özkaraca"
             aria-label="Accedez à mon  compte Stack Overflow"
                 width= 8%
