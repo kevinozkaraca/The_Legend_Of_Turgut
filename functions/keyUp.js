@@ -1,13 +1,22 @@
 function keyUp(e) {
-    if (e.code == "KeyA") {
-        console.log("Up left");
-    } else if (e.code == "KeyD") {
-        console.log("Up right");
-    } else if (e.code == "KeyW") {
-        console.log("Up up");
-    } else if (e.code == 40) {
-        console.log("Up down");
+    let turgut = document.querySelector("#turgut");
+    let counterWalk = 0;
+    let counterAxeX = turgut.style.left;
+    let counterAxeY = turgut.style.top;
+    if (e.code === "KeyW") {
+        turgut.style.top = `${counterAxeY}` + "px";
     }
+    if (e.code === "KeyS") {
+        turgut.style.top = `${counterAxeY}` + "px";
+    }
+    if (e.code === "KeyA") {
+        turgut.style.left = `${counterAxeX}` + "px";
+    }
+    if (e.code === "KeyD") {
+        turgut.style.left = `${counterAxeX}` + "px";
+    }
+
 }
+
 
 export default keyUp;
