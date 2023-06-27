@@ -2,110 +2,19 @@
   font-family: "retro";
   src: url("./font/retro.ttf");
 }
-
 body {
-  width: 1616px;
-  height: 529px;
-  margin: 0;
-  padding: 0;
   image-rendering: pixelated;
-  zoom: 6;
-  background-color: #fcd8a8;
-}
-canvas {
-  width: 1616px;
-  height: 529px;
-  padding: 0;
-  position: relative;
-  background-color: black;
-  z-index: 1;
-  left: 0;
-  right: 0;
-  top: 0px;
-  bottom: 0;
-  margin: auto;
-}
-#map {
-  width: 1616px;
-  height: 529px;
-  background-image: url("./imageOfMap/map.png");
-  background-repeat: no-repeat;
-  position: relative;
-  padding: 0;
-  z-index: 2;
-  left: 0;
-  right: 0;
-  top: -527px;
-  bottom: 0;
-  margin: auto;
-}
-#turgut {
-  width: 16px;
-  height: 16px;
-  background-image: url("./ImagesOfTurgut/Layer\ 1_sprite_01.png");
-  position: relative;
-  margin: 0;
-  padding: 0;
-  left: 900px;
-  top: 420px;
-  z-index: 3;
-  transform: scale(0.7);
-}
-#stickyBar {
   background-color: #000000;
-  position: fixed;
-  z-index: 4;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  padding: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  margin-top: 2px;
+  width: 100%;
+  height: 100%; /* Ajouté pour centrer verticalement */
+  display: flex; /* Ajouté pour centrer verticalement */
+  justify-content: center; /* Ajouté pour centrer verticalement */
+  align-items: center; /* Ajouté pour centrer verticalement */
+  margin: 0; /* Supprimé pour éviter les marges par défaut */
+  padding: 0; /* Supprimé pour éviter les marges par défaut */
 }
-#border {
-  background-color: rgba(3, 3, 3, 0.3);
-  margin: auto;
-  border: solid 1px #c7c7c7;
-  box-sizing: border-box;
-  font-family: "retro";
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 0.4rem;
-  height: 100%;
-}
-#border div {
-  opacity: 1;
-  display: "none";
-}
-#border div div {
-  display: "none";
-}
-#item {
-  height: 100%;
-  width: 20%;
-  border-right: solid 1px #c7c7c7;
-  color: white;
-  text-align: center;
-  align-content: center;
-  justify-content: center;
-  align-self: last baseline;
-  align-items: center;
-  justify-items: center;
-  vertical-align: middle;
-}
-#energy {
-  height: 100%;
-  width: 60%;
-  color: white;
-  text-align: center;
-}
-#key {
-  height: 100%;
-  width: 20%;
-  border-left: solid 1px #c7c7c7;
-  color: white;
-  text-align: center;
+
+canvas {
+  background-color: rgb(110, 110, 110);
+  border: #999998 5px solid;
 }

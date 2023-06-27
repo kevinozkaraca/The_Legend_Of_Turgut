@@ -6,13 +6,13 @@ function responsiveCanvas() {
     let windowHeightScreen = window.innerHeight;
     if (windowHeightScreen < windowsWidthScreen) {
         let scaleHeight = `${windowHeightScreen / 250}`;
-        canvasResponsive.width = 250 * scaleHeight - 40;
-        canvasResponsive.height = 250 * scaleHeight - 40;
+        canvasResponsive.width = 250 * scaleHeight - 12;
+        canvasResponsive.height = 250 * scaleHeight - 12;
         ctx.scale(scaleHeight, scaleHeight);
     } else {
         let scaleWidth = `${windowsWidthScreen / 240}`;
-        canvasResponsive.width = 250 * scaleWidth - 40;
-        canvasResponsive.height = 250 * scaleWidth - 40;
+        canvasResponsive.width = 250 * scaleWidth - 12;
+        canvasResponsive.height = 250 * scaleWidth - 12;
         ctx.scale(scaleWidth, scaleWidth);
     }
 }
