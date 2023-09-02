@@ -27,7 +27,18 @@ Y8.   .8P 88           88    88.  .88 88       88.  .88 88.  .88   88
     <link rel="stylesheet" href="/style.css" />
   </head>
   <body>
-    <canvas id="canvas"></canvas>
+    <div id="allScreen">
+      <div id="halfJoystick" class="leftJoystick">
+        <div id="crossOfHalfJoystick"></div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div id="halfJoystick" class="rightJoystick">
+        <div id="buttonYOfHalfJoystick"></div>
+        <div id="buttonXOfHalfJoystick"></div>
+        <div id="buttonBOfHalfJoystick"></div>
+        <div id="buttonAOfHalfJoystick"></div>
+      </div>
+    </div>
   </body>
   <script type="module" src="/script.js"></script>
 </html>

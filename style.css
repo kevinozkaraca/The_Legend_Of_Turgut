@@ -2,19 +2,92 @@
   font-family: "retro";
   src: url("./font/retro.ttf");
 }
+* {
+  margin: 0; /* Supprimé pour éviter les marges par défaut */
+  padding: 0; /* Supprimé pour éviter les marges par défaut */
+}
 body {
   image-rendering: pixelated;
   background-color: #000000;
   width: 100%;
-  height: 100%; /* Ajouté pour centrer verticalement */
-  display: flex; /* Ajouté pour centrer verticalement */
-  justify-content: center; /* Ajouté pour centrer verticalement */
-  align-items: center; /* Ajouté pour centrer verticalement */
-  margin: 0; /* Supprimé pour éviter les marges par défaut */
-  padding: 0; /* Supprimé pour éviter les marges par défaut */
+  max-width: 2500px;
+  margin: auto; /* Supprimé pour éviter les marges par défaut */
+  padding: auto; /* Supprimé pour éviter les marges par défaut */
 }
-
+#allScreen {
+  background-color: #000000;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto; /* Supprimé pour éviter les marges par défaut */
+  padding: auto; /* Supprimé pour éviter les marges par défaut */
+}
+#halfJoystick {
+  height: 100%;
+  width: 300px;
+}
+.leftJoystick {
+  width: 150px;
+  height: 455px;
+  background-color: #000000;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+#crossOfHalfJoystick {
+  width: 135px;
+  height: 130px;
+  background-image: url("./imagesOfJoystick/97324.png");
+  background-position: 0px 0px;
+  margin: auto;
+  padding: 0;
+  transform: scale(2);
+}
+.rightJoystick {
+  width: 150px;
+  height: 455px;
+  background-color: #000000;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+#buttonAOfHalfJoystick {
+  width: 140px;
+  height: 130px;
+  background-image: url("./imagesOfJoystick/97324.png");
+  background-position: -260px 0px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 0;
+}
+#buttonBOfHalfJoystick {
+  width: 140px;
+  height: 130px;
+  background-image: url("./imagesOfJoystick/97324.png");
+  background-position: -370px 130px;
+  margin-left: 10px;
+  padding: 0;
+}
+#buttonXOfHalfJoystick {
+  width: 140px;
+  height: 130px;
+  background-image: url("./imagesOfJoystick/97324.png");
+  background-position: -510px 130px;
+  margin-right: 10px;
+  padding: 0;
+}
+#buttonYOfHalfJoystick {
+  width: 140px;
+  height: 130px;
+  background-image: url("./imagesOfJoystick/97324.png");
+  background-position: -645px 130px;
+  margin-left: 80px;
+  margin-right: 80px;
+  padding: 0;
+}
 canvas {
   background-color: rgb(110, 110, 110);
   border: #999998 5px solid;
+  margin: auto;
 }
