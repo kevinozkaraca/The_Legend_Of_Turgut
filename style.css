@@ -41,7 +41,17 @@ body {
   background-position: 0px 0px;
   margin: auto;
   padding: 0;
-  transform: scale(2);
+  transform: scale(2.5);
+  color: aliceblue;
+}
+#directionOfCross {
+  width: 36px;
+  height: 36px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 35px;
+  position: absolute;
+  top: 46px;
+  left: 46px;
 }
 .rightJoystick {
   width: 150px;

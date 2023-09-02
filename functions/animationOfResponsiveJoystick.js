@@ -9,72 +9,113 @@ function animationOfResponsiveJoystick() {
         );
         console.log(e);
         console.log('Gamepad en action');
-        let gp = e.gamepad;
-        let axes = [gp.axes[0], gp.axes[1], gp.axes[2], gp.axes[3]];
-        let buttons = gp.buttons.map((button) => button.pressed);
-        console.log(axes);
-        console.log(buttons);
         setInterval(() => {
-            console.log("settime");
-            if (axes[0] >= 0.7 || axes[3] >= 0.7 || axes[1] >= 0.7 || axes[2] >= 0.7) {
-                console.log(axes);
+            let gp = navigator.getGamepads()[0];
+            let axe1 = gp.axes[0];
+            let axe2 = gp.axes[1];
+            let axe3 = gp.axes[3];
+            let axe4 = gp.axes[2];
+            let buttonY = document.querySelector("#buttonYOfHalfJoystick");
+            let buttonX = document.querySelector("#buttonXOfHalfJoystick");
+            let buttonB = document.querySelector("#buttonBOfHalfJoystick");
+            let buttonA = document.querySelector("#buttonAOfHalfJoystick");
+            let directionOfCross = document.querySelectorAll("#directionOfCross");
+            if (axe1 >= 0.7) {
+                directionOfCross[5].style.left = "87px";//droite
+            } else {
+                directionOfCross[5].style.left = "46px";
             }
-
-            if (buttons[0]) {
-                console.log("Button A");
+            if (axe4 >= 0.7) {
+                console.log(axe4);
             }
-            if (buttons[1]) {
-                console.log("Button B");
+            if (axe1 <= -0.7) {
+                directionOfCross[7].style.left = "5px";//Gauche
+                console.log("14");
+            } else {
+                directionOfCross[7].style.left = "46px";
             }
-            if (buttons[2]) {
-                console.log("Button X");
+            if (axe4 <= -0.7) {
+                console.log(axe4);
             }
-            if (buttons[3]) {
-                console.log("Button Y");
+            if (axe2 >= 0.7) {
+                directionOfCross[6].style.top = "87px";//bas
+            } else {
+                directionOfCross[6].style.top = "46px";
             }
-            if (buttons[4]) {
+            if (axe3 >= 0.7) {
+                console.log(axe3);
+            }
+            if (axe2 <= -0.7) {
+                directionOfCross[4].style.top = "5px";//haut
+            } else {
+                directionOfCross[4].style.top = "46px";
+            }
+            if (axe3 <= -0.7) {
+                console.log(axe3);
+            }
+            if (gp.buttons[0].pressed == true) {
+                buttonA.style.transform = "scale(1.5)";
+            } else {
+                buttonA.style.transform = "scale(1)";
+            }
+            if (gp.buttons[1].pressed == true) {
+                buttonB.style.transform = "scale(1.5)";
+            } else {
+                buttonB.style.transform = "scale(1)";
+            }
+            if (gp.buttons[2].pressed == true) {
+                buttonX.style.transform = "scale(1.5)";
+            } else {
+                buttonX.style.transform = "scale(1)";
+            }
+            if (gp.buttons[3].pressed == true) {
+                buttonY.style.transform = "scale(1.5)";
+            } else {
+                buttonY.style.transform = "scale(1)";
+            }
+            if (gp.buttons[4].pressed == true) {
                 console.log("Button LB");
             }
-            if (buttons[5]) {
+            if (gp.buttons[5].pressed == true) {
                 console.log("Button RB");
             }
-            if (buttons[6]) {
+            if (gp.buttons[6].pressed == true) {
                 console.log("Button LT");
             }
-            if (buttons[7]) {
+            if (gp.buttons[7].pressed == true) {
                 console.log("Button RT");
             }
-            if (buttons[8]) {
+            if (gp.buttons[8].pressed == true) {
                 console.log("Select");
             }
-            if (buttons[9]) {
+            if (gp.buttons[9].pressed == true) {
                 console.log("Start");
             }
-            if (buttons[10]) {
+            if (gp.buttons[10].pressed == true) {
                 console.log("Push sur la direction");
             }
-            if (buttons[11]) {
+            if (gp.buttons[11].pressed == true) {
                 console.log("Push sur l'iso");
             }
-            if (buttons[12]) {
-                console.log("Up button pressed");
-                upPressed = true;
-                lastButtonPressed = "up";
+            if (gp.buttons[12].pressed == true) {
+                directionOfCross[0].style.top = "5px";//haut
+            } else {
+                directionOfCross[0].style.top = "46px";
             }
-            if (buttons[13]) {
-                console.log("Down button pressed");
-                downPressed = true;
-                lastButtonPressed = "down";
+            if (gp.buttons[13].pressed == true) {
+                directionOfCross[1].style.top = "87px";//bas
+            } else {
+                directionOfCross[1].style.top = "46px";
             }
-            if (buttons[14]) {
-                console.log("Left button pressed");
-                leftPressed = true;
-                lastButtonPressed = "left";
+            if (gp.buttons[14].pressed == true) {
+                directionOfCross[2].style.left = "5px";//Gauche
+            } else {
+                directionOfCross[2].style.left = "46px";
             }
-            if (buttons[15]) {
-                console.log("Right button pressed");
-                rightPressed = true;
-                lastButtonPressed = "right";
+            if (gp.buttons[15].pressed == true) {
+                directionOfCross[3].style.left = "87px";//droit
+            } else {
+                directionOfCross[3].style.left = "46px";
             }
         }, 100);
 
