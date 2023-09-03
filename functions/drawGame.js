@@ -1,6 +1,6 @@
 import responsiveCanvas from "./responsiveCanvas.js";
 function drawGame() {
-    responsiveCanvas;
+    responsiveCanvas();
     console.log("fonctionDraw");
     // Get the canvas element and its context.
     let canvas = document.getElementById("canvas");
@@ -10,25 +10,15 @@ function drawGame() {
     // image map
     let mapImage = new Image();
     mapImage.src = "./imageOfMap/map.png";
-
     // Load the image.
     let turgutImage = new Image();
-    turgutImage.src = "./imagesOfTurgut/sprite_01.png";
+    turgutImage.src = "./imagesOfTurgut/sprite01.png";
     // Initial position of the image.
     let turgutX = 120;
     let turgutY = 110;
     let turgutWidth = 16;
     let turgutHeight = 16;
-    let turgutSpeed = 2;
-    document.addEventListener("keydown", function (event) {
-        // Handle arrow key presses (you can modify this for other keys).
-        switch (event.key) {
-            case "Enter":
-                turgutX -= turgutSpeed;
-                draw();
-                break;
-        }
-    });
+    let turgutSpeed = 3;
     function draw() {
         // Clear the canvas.
         ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -38,7 +28,7 @@ function drawGame() {
         ctx.drawImage(turgutImage, turgutX, turgutY, turgutWidth, turgutHeight);
     }
     // Call the draw function initially.
-
+    draw();
     // Add a keyboard event listener to move the image.
     document.addEventListener("keydown", function (event) {
         // Handle arrow key presses (you can modify this for other keys).
@@ -60,9 +50,7 @@ function drawGame() {
                 draw();
                 break;
         }
-
     });
-
     window.addEventListener("gamepadconnected", (e) => {
         setInterval(() => {
             let gp = navigator.getGamepads()[0];
@@ -76,29 +64,44 @@ function drawGame() {
             let buttonA = document.querySelector("#buttonAOfHalfJoystick");
             let directionOfCross = document.querySelectorAll("#directionOfCross");
             if (axe1 >= 0.7) {
-                turgutX = turgutX + turgutSpeed;
+                turgutX = turgutX + turgutSpeed;//Droite
+                console.log("axe");
                 draw();
             }
             if (axe4 >= 0.7) {
-                console.log(axe4);
+                turgutX = turgutX + turgutSpeed;//Droite
+                console.log("axe");
+                draw();
             }
             if (axe1 <= -0.7) {
-                console.log("Gauche");
+                turgutX = turgutX - turgutSpeed;//Gauche
+                console.log("axe");
+                draw();
             }
             if (axe4 <= -0.7) {
-                console.log(axe4);
+                turgutX = turgutX - turgutSpeed;//Gauche
+                console.log("axe");
+                draw();
             }
             if (axe2 >= 0.7) {
-                console.log("Bas");
+                turgutY = turgutY + turgutSpeed;//Bas
+                console.log("axe");
+                draw();
             }
             if (axe3 >= 0.7) {
-                console.log(axe3);
+                turgutY = turgutY + turgutSpeed;//Bas
+                console.log("axe");
+                draw();
             }
             if (axe2 <= -0.7) {
-                console.log("Haut");
+                turgutY = turgutY - turgutSpeed;//Haut
+                console.log("axe");
+                draw();
             }
             if (axe3 <= -0.7) {
-                console.log(axe3);
+                turgutY = turgutY - turgutSpeed;//Haut
+                console.log("axe");
+                draw();;
             }
             if (gp.buttons[0].pressed == true) {
                 console.log("A");
@@ -135,18 +138,6 @@ function drawGame() {
             }
             if (gp.buttons[11].pressed == true) {
                 console.log("Push sur l'iso");
-            }
-            if (gp.buttons[12].pressed == true) {
-                console.log("Haut");
-            }
-            if (gp.buttons[13].pressed == true) {
-                console.log("Bas");
-            }
-            if (gp.buttons[14].pressed == true) {
-                console.log("Gauche");
-            }
-            if (gp.buttons[15].pressed == true) {
-                console.log("Droite");
             }
         }, 100);
         // Call the draw function to redraw the image.
