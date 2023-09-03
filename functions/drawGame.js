@@ -7,20 +7,20 @@ function drawGame() {
     ctx.imageSmoothingEnabled = false;
     // image map
     let mapImage = new Image();
-    mapImage.src = "../imageOfMap/map.png";
+    mapImage.src = "./imageOfMap/map.png";
     mapImage.onload = function () {
         ctx.drawImage(mapImage, 0, 0, mapImage.width, mapImage.height);
     };
     // Load the image.
     let turgutImage = new Image();
-    turgutImage.src = "../imagesOfTurgut/Layer 1_sprite_01.png";
+    turgutImage.src = "./imagesOfTurgut/Layer 1_sprite_01.png";
     turgutImage.addEventListener("load", function () {
         // Initial position of the image.
         let turgutX = 120;
         let turgutY = 110;
         let turgutWidth = 16;
         let turgutHeight = 16;
-        let turgutSpeed = 4;
+        let turgutSpeed = 2;
         function draw() {
             // Clear the canvas.
             ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -37,15 +37,19 @@ function drawGame() {
             switch (event.key) {
                 case "ArrowLeft":
                     turgutX -= turgutSpeed;
+                    draw();
                     break;
                 case "ArrowRight":
                     turgutX += turgutSpeed;
+                    draw();
                     break;
                 case "ArrowUp":
                     turgutY -= turgutSpeed;
+                    draw();
                     break;
                 case "ArrowDown":
                     turgutY += turgutSpeed;
+                    draw();
                     break;
             }
 
