@@ -1,7 +1,6 @@
 import responsiveCanvas from "./responsiveCanvas.js";
 function drawGame() {
     responsiveCanvas();
-    console.log("fonctionDraw");
     // Get the canvas element and its context.
     let canvas = document.getElementById("canvas");
     // Make the image look pixelated.
@@ -19,35 +18,34 @@ function drawGame() {
     let turgutWidth = 16;
     let turgutHeight = 16;
     let turgutSpeed = 3;
-    function draw() {
+    function drawImage() {
         // Clear the canvas.
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         //drawthemap
-        ctx.drawImage(mapImage, 0, 0, mapImage.width, mapImage.height);
+        ctx.draw(mapImage, 0, 0, mapImage.width, mapImage.height);
         // Draw the image.
-        ctx.drawImage(turgutImage, turgutX, turgutY, turgutWidth, turgutHeight);
+        ctx.draw(turgutImage, turgutX, turgutY, turgutWidth, turgutHeight);
     }
-    // Call the draw function initially.
-    draw();
+    drawImage();
     // Add a keyboard event listener to move the image.
     document.addEventListener("keydown", function (event) {
         // Handle arrow key presses (you can modify this for other keys).
         switch (event.key) {
             case "ArrowLeft":
                 turgutX -= turgutSpeed;
-                draw();
+                drawImage();
                 break;
             case "ArrowRight":
                 turgutX += turgutSpeed;
-                draw();
+                drawImage();
                 break;
             case "ArrowUp":
                 turgutY -= turgutSpeed;
-                draw();
+                drawImage();
                 break;
             case "ArrowDown":
                 turgutY += turgutSpeed;
-                draw();
+                drawImage();
                 break;
         }
     });
@@ -66,43 +64,14 @@ function drawGame() {
             if (axe1 >= 0.7) {
                 turgutX = turgutX + turgutSpeed;//Droite
                 console.log("axe");
-                draw();
-            }
-            if (axe4 >= 0.7) {
-                turgutX = turgutX + turgutSpeed;//Droite
-                console.log("axe");
-                draw();
+                drawImage();
             }
             if (axe1 <= -0.7) {
                 turgutX = turgutX - turgutSpeed;//Gauche
                 console.log("axe");
-                draw();
+                drawImage();
             }
-            if (axe4 <= -0.7) {
-                turgutX = turgutX - turgutSpeed;//Gauche
-                console.log("axe");
-                draw();
-            }
-            if (axe2 >= 0.7) {
-                turgutY = turgutY + turgutSpeed;//Bas
-                console.log("axe");
-                draw();
-            }
-            if (axe3 >= 0.7) {
-                turgutY = turgutY + turgutSpeed;//Bas
-                console.log("axe");
-                draw();
-            }
-            if (axe2 <= -0.7) {
-                turgutY = turgutY - turgutSpeed;//Haut
-                console.log("axe");
-                draw();
-            }
-            if (axe3 <= -0.7) {
-                turgutY = turgutY - turgutSpeed;//Haut
-                console.log("axe");
-                draw();;
-            }
+
             if (gp.buttons[0].pressed == true) {
                 console.log("A");
             }
@@ -141,7 +110,7 @@ function drawGame() {
             }
         }, 100);
         // Call the draw function to redraw the image.
-        draw();
+        drawImage();
     });
 
 }
