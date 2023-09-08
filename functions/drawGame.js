@@ -22,9 +22,9 @@ function drawGame() {
         // Clear the canvas.
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         //drawthemap
-        ctx.draw(mapImage, 0, 0, mapImage.width, mapImage.height);
+        ctx.drawImage(mapImage, 0, 0, mapImage.width, mapImage.height);
         // Draw the image.
-        ctx.draw(turgutImage, turgutX, turgutY, turgutWidth, turgutHeight);
+        ctx.drawImage(turgutImage, turgutX, turgutY, turgutWidth, turgutHeight);
     }
     drawImage();
     // Add a keyboard event listener to move the image.
