@@ -11,7 +11,7 @@ function drawGame() {
     mapImage.src = "./imageOfMap/map.png";
     // Load the image.
     let turgutImage = new Image();
-    turgutImage.src = "./imagesOfTurgut/sprite01.png";
+    turgutImage.src = "./ImagesOfTurgut/sprite01.png";
     // Initial position of the image.
     let turgutX = 120;
     let turgutY = 110;
